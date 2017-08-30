@@ -1,8 +1,7 @@
 buildscript {
   repositories { jcenter() }
   dependencies {
-    classpath 'com.netflix.nebula:gradle-rxjava-project-plugin:4.+'
-
+    classpath 'com.netflix.nebula:gradle-rxjava-project-plugin:4.0.0'
     classpath 'ru.vyarus:gradle-animalsniffer-plugin:1.1.0'
   }
 }
@@ -17,9 +16,7 @@ apply plugin: 'java'
 apply plugin: 'checkstyle'
 apply plugin: 'jacoco'
 apply plugin: 'ru.vyarus.animalsniffer'
-allprojects {
-    apply plugin: 'nebula.rxjava-project'
-}
+apply plugin: 'nebula.rxjava-project'
 
 sourceCompatibility = JavaVersion.VERSION_1_6
 targetCompatibility = JavaVersion.VERSION_1_6
