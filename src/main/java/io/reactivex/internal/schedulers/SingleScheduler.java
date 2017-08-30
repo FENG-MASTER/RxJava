@@ -58,7 +58,7 @@ public final class SingleScheduler extends Scheduler {
      */
     public SingleScheduler(ThreadFactory threadFactory) {
         this.threadFactory = threadFactory;
-        executor.lazySet(createExecutor(threadFactory));//新建
+        executor.lazySet(createExecutor(threadFactory));//新建executor,用于线程调度
     }
 
     static ScheduledExecutorService createExecutor(ThreadFactory threadFactory) {
